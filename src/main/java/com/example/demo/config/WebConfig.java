@@ -12,7 +12,7 @@ public class WebConfig implements WebMvcConfigurer {
         registry.addMapping("/**") // toutes les routes
                 .allowedOrigins(
                         "http://localhost:4200",     // ton Angular local
-                        "https://gbl-ftontend.vercel.app/" // ton front déployé sur Vercel
+                        "https://gbl-sn.vercel.app/" // ton front déployé sur Vercel
                 )
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                 .allowedHeaders("*");
