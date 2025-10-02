@@ -11,8 +11,8 @@ public class WebConfig implements WebMvcConfigurer {
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**") // toutes les routes
                 .allowedOrigins(
-                        "http://localhost:4200"      // ton Angular local
-                        //"https://ton-front.vercel.app" // ton front déployé sur Vercel
+                        "http://localhost:4200",     // ton Angular local
+                        "https://gbl-ftontend.vercel.app/" // ton front déployé sur Vercel
                 )
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                 .allowedHeaders("*");
